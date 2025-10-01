@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\User;
+
+class AdminController extends Controller
+{
+    //
+    public function index()
+    {
+        return view('admin.dashboard');
+    }
+
+    public function listUsers()
+    {
+        // Fetch all users from the database
+        $users = User::all();
+        return view('admin.users.index', compact('users'));
+    }
+}
