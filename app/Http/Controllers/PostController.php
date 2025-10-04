@@ -133,7 +133,7 @@ class PostController extends Controller
 
         $post->delete();
 
-        return redirect()->route('admin.posts.index')->with('success', 'Post successfully trashed.');
+        return redirect()->route('admin.posts.index')->with('success', 'Post is successfully trashed.');
     }
 
     // Restore a soft-deleted post (admin only)
@@ -147,7 +147,7 @@ class PostController extends Controller
         $post = Post::onlyTrashed()->findOrFail($id);
         $post->restore();
 
-        return redirect()->route('admin.posts.index')->with('success', 'Post restored.');
+        return redirect()->route('admin.posts.index')->with('success', 'Post has been successfully restored.');
     }
 
     // Permanently delete a post (admin only)
@@ -161,6 +161,6 @@ class PostController extends Controller
         $post = Post::onlyTrashed()->findOrFail($id);
         $post->forceDelete();
 
-        return redirect()->route('admin.posts.index')->with('success', 'Post permanently deleted.');
+        return redirect()->route('admin.posts.index')->with('success', 'Post has been permanently deleted.');
     }
 }

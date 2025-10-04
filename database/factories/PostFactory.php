@@ -12,6 +12,7 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
+            // call on faker to generate a title and body
             'title' => $this->faker->sentence(6),
             'body' => $this->faker->paragraph(4),
             'user_id' => 1, // will be overridden by seeder state
