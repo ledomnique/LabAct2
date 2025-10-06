@@ -12,6 +12,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/guide', function () {
+    return view('guide');
+})->name('guide');
+
+Route::get('/developer', function () {
+    return view('developer');
+})->name('developer');
+
+Route::get('/audience', function () {
+    return view('audience');
+})->name('audience');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

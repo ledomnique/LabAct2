@@ -152,82 +152,26 @@
                     <!-- Main Hero Card -->
                     <div class="glass-effect rounded-3xl p-12 shadow-2xl hero-glow">
                         <div class="inline-block px-4 py-2 bg-gradient-to-r from-[#ff3b30]/10 to-[#ff9500]/10 rounded-full mb-6">
-                            <span class="text-sm font-semibold text-[#ff3b30]">Lab Activity 2 & 3</span>
+                            <span class="text-sm font-semibold text-[#ff3b30]">Developer Information</span>
                         </div>
                         
                         <h2 class="text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
-                            Welcome to
+                            Lewis Dominique
                             <span class="bg-gradient-to-r from-[#ff3b30] to-[#ff9500] bg-clip-text text-transparent">
-                                Laravel
+                                Nilo
                             </span>
                         </h2>
                         
                         <p class="text-xl lg:text-2xl font-medium text-[#412234] mb-8">
-                            Lewis Nilo's Development Project
+                            Laravel Lab Activities 2 & 3
                         </p>
                         
                         <p class="text-lg text-[#555] leading-relaxed max-w-2xl mx-auto mb-6">
-                            Experience a modern web application featuring seamless 
-                            <span class="font-semibold text-[#ff3b30]">authentication</span>, 
-                            dynamic <span class="font-semibold text-[#ff3b30]">post management</span>, 
-                            and powerful <span class="font-semibold text-[#ff3b30]">admin tools</span>.
+                            A dedicated and passionate developer with a keen interest in web technologies and frameworks. This project showcases my understanding in Laravel, demonstrating my ability to create role-based access using middleware and proper forms and form handling. I am committed to continuous learning and improvement, always striving to deliver high-quality code and innovative solutions.
                         </p>
-                        
-                        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
-                            @if (Route::has('login'))
-                                @guest
-                                    <a href="{{ route('register') }}"
-                                       class="px-8 py-4 text-base font-bold text-white bg-gradient-to-r from-[#ff3b30] to-[#ff6b59] rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
-                                        Get Started
-                                    </a>
-                                    <a href="{{ route('login') }}"
-                                       class="px-8 py-4 text-base font-semibold text-[#1b1b18] glass-effect rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                                        Sign In
-                                    </a>
-                                @endguest
-                            @endif
-                        </div>
-                    </div>
-
-                    <!-- Feature Cards -->
-                    <div class="grid md:grid-cols-3 gap-6 mt-12">
-                        <div class="glass-effect rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 fade-in-up" style="animation-delay: 0.3s;">
-                            <div class="w-12 h-12 bg-gradient-to-br from-[#ff3b30] to-[#ff6b59] rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-bold mb-2">User Authentication</h3>
-                            <p class="text-sm text-[#666]">Secure login and registration system</p>
-                        </div>
-                        
-                        <div class="glass-effect rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 fade-in-up" style="animation-delay: 0.4s;">
-                            <div class="w-12 h-12 bg-gradient-to-br from-[#ff9500] to-[#ffb84d] rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                    <polyline points="14 2 14 8 20 8"></polyline>
-                                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                                    <polyline points="10 9 9 9 8 9"></polyline>
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-bold mb-2">Post Management</h3>
-                            <p class="text-sm text-[#666]">Create, edit, and manage content easily</p>
-                        </div>
-                        
-                        <div class="glass-effect rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 fade-in-up" style="animation-delay: 0.5s;">
-                            <div class="w-12 h-12 bg-gradient-to-br from-[#412234] to-[#6b3a52] rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                </svg>
-                            </div>
-                            <h3 class="text-lg font-bold mb-2">Admin Panel</h3>
-                            <p class="text-sm text-[#666]">Comprehensive administrative controls</p>
-                        </div>
+                        <a href="{{ url('/about') }}" class="inline-block px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-[#ff3b30] to-[#ff6b59] rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                            Learn More About the Project
+                        </a>
                     </div>
                 </div>
             </main>
