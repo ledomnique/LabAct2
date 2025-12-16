@@ -7,11 +7,6 @@
 
     <div class="py-9">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            @if(session('success'))
-                <div class="mb-2 text-green-700 bg-green-100 p-3 rounded">
-                    {{ session('success') }}
-                </div>
-            @endif
 
             <!-- Create post form -->
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6 mb-6">

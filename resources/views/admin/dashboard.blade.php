@@ -19,6 +19,16 @@
                     <div class="mt-2 text-3xl font-bold text-gray-800">{{ \App\Models\User::count() }}</div>
                 </div>
             </div>
+            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mt-6">
+                <div class="p-6">
+                    <div class="text-sm text-gray-500">Number of Uploaded Images</div>
+                    <div class="mt-2 text-3xl font-bold text-gray-800">
+                        {{ collect(\Illuminate\Support\Facades\Storage::disk('public')->files('uploads'))->filter(function($f){
+                            return preg_match('/\.(jpe?g|png|gif|svg|webp)$/i', $f);
+                        })->count() }}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </x-app-layout>

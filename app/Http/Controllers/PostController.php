@@ -87,6 +87,7 @@ class PostController extends Controller
         // attach the current user as the author
         $data['user_id'] = Auth::id();
 
+        // Create the post from the form found in admin/posts/index.blade.php
         Post::create($data);
 
         // Flash message on successful post creation

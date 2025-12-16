@@ -29,6 +29,10 @@
                         <x-nav-link href="{{ route('admin.users.index') }}" :active="request()->routeIs('admin.users') || request()->routeIs('admin.users.*')">
                             {{ __('Users') }}
                         </x-nav-link>
+                        <x-nav-link href="{{ route('admin.images.upload') }}" :active="request()->routeIs('admin.images.upload')">
+                            {{ __('Upload Images') }}
+                        </x-nav-link>   
+
                     @endif
                 </div>
             </div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Middleware\EnsureUserHasRole;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ImageController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -67,6 +68,10 @@ Route::middleware([
             Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('admin.posts.destroy');
             Route::post('/posts/{id}/restore', [PostController::class, 'restore'])->name('admin.posts.restore');
             Route::delete('/posts/{id}/force-delete', [PostController::class, 'forceDelete'])->name('admin.posts.forceDelete');
+
+            // route for page to upload images
+            Route::get('/images', [ImageController::class, 'showImageUploadForm'])->name('admin.images.upload');
+        Route::post('/images', [ImageController::class, 'uploadImages'])->name('admin.images.store');
     });
     
     //User routes
